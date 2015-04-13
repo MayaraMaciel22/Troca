@@ -1,0 +1,29 @@
+%h1 Listing Trocas entre usuários
+
+%table
+  %tr
+    %th Usuário
+    %th Ponto de troca
+    %th Ponto de origem
+    %th Ponto de destino
+    %th Estado
+    %th Data da troca
+    %th
+    %th
+    %th
+
+  - @trocaentreusuarios.each do |trocaentreusuario|
+    %tr
+      %td= trocaentreusuario.usuario
+      %td= trocaentreusuario.pontodetroca
+      %td= trocaentreusuario.pontoorigem
+      %td= trocaentreusuario.pontodestino
+      %td= trocaentreusuario.estado
+      %td= trocaentreusuario.datatroca
+      %td= link_to 'Show', trocaentreusuario
+      %td= link_to 'Altera', edit_trocaentreusuario_path(trocaentreusuario)
+      %td= link_to 'Excluir', trocaentreusuario, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Troca entre usuários', new_trocaentreusuario_path

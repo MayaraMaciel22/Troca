@@ -1,0 +1,14 @@
+= simple_form_for(@usuario) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :nome
+    = f.input :email
+    = f.input :cpf, label:'CPF' 
+    = f.input :telefone
+    = f.input :endereco, label:'Endereço' 
+    = f.input :senha
+    = f.input :datanascimento, label:'Data de nascimento' 
+
+  .form-actions
+    = f.submit 'Salvar'

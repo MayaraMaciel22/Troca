@@ -1,0 +1,23 @@
+%h1 Listing Ponto de trocas
+
+%table
+  %tr
+    %th Nome
+    %th Endereço
+    %th Email
+    %th
+    %th
+    %th
+
+  - @pontodetrocas.each do |pontodetroca|
+    %tr
+      %td= pontodetroca.nome
+      %td= pontodetroca.endereco
+      %td= pontodetroca.email
+      %td= link_to 'Show', pontodetroca
+      %td= link_to 'Altera', edit_pontodetroca_path(pontodetroca)
+      %td= link_to 'Excluir', pontodetroca, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Ponto de troca', new_pontodetroca_path

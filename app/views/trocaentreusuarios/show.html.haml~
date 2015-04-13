@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Usuario:
+  = @trocaentreusuario.usuario.nome
+%p
+  %b Ponto de troca:
+  = @trocaentreusuario.pontodetroca.nome
+%p
+  %b Ponto de origem:
+  = @trocaentreusuario.pontoorigem
+%p
+  %b Ponto de destino:
+  = @trocaentreusuario.pontodestino
+%p
+  %b Estado:
+  = @trocaentreusuario.estado
+%p
+  %b Data da troca:
+  = @trocaentreusuario.datatroca
+
+= link_to 'Edit', edit_trocaentreusuario_path(@trocaentreusuario)
+\|
+= link_to 'Back', trocaentreusuarios_path

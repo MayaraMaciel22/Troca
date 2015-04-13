@@ -1,0 +1,13 @@
+= simple_form_for(@trocaentreusuario) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :usuario, label_method: :nome %>
+    = f.association :pontodetroca, label:'Ponto de troca', label_method: :nome %>
+    = f.input :pontoorigem, label:'Ponto de origem'
+    = f.input :pontodestino, label:'Ponto de destino'
+    = f.input :estado
+    = f.input :datatroca, label:'Data da troca'
+
+  .form-actions
+    = f.submit 'Salvar'

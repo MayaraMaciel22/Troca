@@ -1,0 +1,7 @@
+%h1 Editing pontodetroca
+
+= render 'form'
+
+= link_to 'Show', @pontodetroca
+\|
+= link_to 'Back', pontodetrocas_path

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+Name	   : Regeneracy
+Description: A two-column, fixed-width design with dark color scheme.
+Version	: 1.0
+Released   : 20100529
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+	<title>Troca</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+<div id='wrapper'>
+	<div id='header-wrapper'>
+		<div id='header'>
+			<div id='logo'>
+				<h1><a href='/'></a></h1>
+            <p>sistema de Troca Online</p>
+			</div>
+			   <div id = 'menu'>
+			      <ul> 
+			       <li><%= link_to 'Usuários',usuarios_path %></li>
+			       <li><%= link_to 'Ponto de troca',pontodetrocas_path %></li>
+			       <li><%= link_to 'Troca entre usuários',trocaentreusuarios_path %></li>
+			      
+			      </ul> 
+			   </div>
+                </div>
+           </div>
+	   <div id='page'>
+
+	     <div id='page-bgtop'>
+				<div id='page-bgbtm'>
+				<%= yield %>
+					<div style='clear: both;'> </div>
+				</div>
+			</div>
+	    
+	   </div>
+   
+ </div>
+</body>
+</html>

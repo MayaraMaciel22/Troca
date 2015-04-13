@@ -1,0 +1,11 @@
+FactoryGirl.define do
+  factory :trocaentreusuario do
+    usuario nil
+	 pontodetroca nil
+	 pontoorigem "MyString"
+	 pontodestino "MyString"
+	 estado "MyString"
+	 datatroca "MyString"
+  end
+
+end

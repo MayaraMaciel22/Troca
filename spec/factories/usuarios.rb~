@@ -1,0 +1,12 @@
+FactoryGirl.define do
+  factory :usuario do
+    nome "MyString"
+email "MyString"
+cpf "MyString"
+datanascimento "MyString"
+telefone "MyString"
+endereco "MyString"
+senha "MyString"
+  end
+
+end

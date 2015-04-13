@@ -1,0 +1,31 @@
+%h1 Listing Usuários
+
+%table
+  %tr
+    %th Nome
+    %th Email
+    %th Cpf
+    %th Telefone
+    %th Endereço
+    %th Senha
+    %th Data de nascimento
+    %th
+    %th
+    %th
+
+  - @usuarios.each do |usuario|
+    %tr
+      %td= usuario.nome
+      %td= usuario.email
+      %td= usuario.cpf
+      %td= usuario.telefone
+      %td= usuario.endereco
+      %td= usuario.senha
+      %td= usuario.datanascimento
+      %td= link_to 'Show', usuario
+      %td= link_to 'Altera', edit_usuario_path(usuario)
+      %td= link_to 'Excluir', usuario, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Usuário', new_usuario_path

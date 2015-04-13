@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @pontodetroca.nome
+%p
+  %b Endereço:
+  = @pontodetroca.endereco
+%p
+  %b Email:
+  = @pontodetroca.email
+
+= link_to 'Edit', edit_pontodetroca_path(@pontodetroca)
+\|
+= link_to 'Back', pontodetrocas_path

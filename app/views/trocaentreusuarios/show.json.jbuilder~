@@ -1,0 +1,1 @@
+json.extract! @trocaentreusuario, :id, :usuario_id.nome, :pontodetroca_id, :pontoorigem, :pontodestino, :estado, :datatroca, :created_at, :updated_at

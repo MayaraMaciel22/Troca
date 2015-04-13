@@ -1,0 +1,7 @@
+%h1 Editing Troca entre usuários
+
+= render 'form'
+
+= link_to 'Show', @trocaentreusuario
+\|
+= link_to 'Back', trocaentreusuarios_path
